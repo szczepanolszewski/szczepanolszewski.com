@@ -3133,10 +3133,9 @@
             <p class="eyebrow">THE RESERVE</p>
             <h3 data-i18n="res.h">A weekly newsletter on muscle and aging</h3>
             <p data-i18n="res.sub">A few minutes each week, made to read over your Sunday morning coffee.</p>
-            <form class="newsletter-card__form" onsubmit="event.preventDefault(); var v=(this.querySelector('input').value||'').trim(); window.open('https://szczepanolszewski.substack.com'+(v?('?email='+encodeURIComponent(v)):''), '_blank', 'noopener');">
-              <input type="email" class="newsletter-card__input" placeholder="your email" data-i18n-ph="res.email" aria-label="Email address" required="">
-              <button class="button button--primary" type="submit" data-i18n="res.subscribe">Subscribe</button>
-            </form>
+            <div class="newsletter-card__embed">
+              <iframe src="https://szczepanolszewski.substack.com/embed" title="Subscribe to The Reserve" loading="lazy" style="width:100%;max-width:480px;height:150px;border:1px solid var(--so-ink-line);border-radius:16px;background:#fff;"></iframe>
+            </div>
             <p class="newsletter-card__read" data-i18n="res.read">Prefer to read first? <a href="https://szczepanolszewski.substack.com" target="_blank" rel="noopener">Browse past issues of The Reserve</a>.</p>
           </div>
           <div class="newsletter-card__features-col">
